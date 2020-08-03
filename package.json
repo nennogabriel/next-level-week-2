@@ -1,0 +1,13 @@
+{
+  "name": "next-level-week-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nennogabriel/next-level-week-2.git",
+  "author": "Pedro Moreno <nennogabriel@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "./shared/*",
+    "./modules/*"
+  ]
+}
