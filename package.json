@@ -1,13 +1,22 @@
 {
-  "name": "next-level-week-2",
+  "name": "nlw2",
+  "private": true,
   "version": "1.0.0",
+  "license": "MIT",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": "https://github.com/nennogabriel/next-level-week-2.git",
   "author": "Pedro Moreno <nennogabriel@gmail.com>",
-  "license": "MIT",
-  "private": "true",
-  "workspaces": [
-    "./shared/*",
-    "./modules/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "./shared/*",
+      "./modules/*"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "@nlw2/eslint-config": "*"
+  }
 }
