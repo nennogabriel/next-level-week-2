@@ -1,13 +1,15 @@
 import express from 'express'
+import ClassesController from './controllers/ClassesController'
+import ConnectionsController from './controllers/ConnectionsController'
 
 const routes = express.Router()
+const classesController = new ClassesController()
+const connectionsController = new ConnectionsController()
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello World' })
-})
+routes.post('/classes', classesController.index)
+routes.post('/classes', classesController.create)
 
-routes.post('/posts', (request, response) => {
-  return response.json({ message: 'New post' })
-})
+routes.post('/connections', connectionsController.index)
+routes.post('/connections', connectionsController.create)
 
 export default routes

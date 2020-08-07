@@ -31,6 +31,7 @@
   width: 90%;
   margin: 3.2rem auto;
   position: relative;
+  color: var(--color-text-in-primary)
 }
 
 .page-header .header-content strong {
@@ -39,6 +40,10 @@
   color: var(--color-title-in-primary)
 }
 
+.page-header .header-content p {
+  max-width: 30rem;
+  font-size: 1.6rem;
+}
 
 @media (min-width: 700px) {
   .page-header {

@@ -66,15 +66,15 @@
 }
 
 .buttons-container a.give-classes {
-  background: var(--color-secundary)
+  background: var(--color-secondary)
 }
 
 .buttons-container a.study:hover {
   background: var(--color-primary-light);
  }
- 
+
  .buttons-container a.give-classes:hover {
-   background: var(--color-secundary-dark)
+   background: var(--color-secondary-dark)
  }
 
  .total-connections {
@@ -96,7 +96,7 @@
      display: grid;
      grid-template-rows: 350px 1fr;
      grid-template-columns: 2fr 1fr 1fr;
-     grid-template-areas: 
+     grid-template-areas:
      "logo hero hero"
      "buttons buttons total"
      ;
@@ -115,7 +115,7 @@
    }
 
    .logo-container img{
-     
+
      height: 100%
    }
 

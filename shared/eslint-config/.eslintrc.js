@@ -23,7 +23,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    "@typescript-eslint/camelcase": "off"
+
   },
   settings: {
     'import/resolver': {

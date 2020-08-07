@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3333
+@thisUrl = {{baseUrl}}
+
+
+{{thisUrl}}
+content-type: application/json
+
+###
+POST {{thisUrl}}/classes/
+content-type: application/json
+
+{
+  "name": "Pedro Moreno",
+  "avatar": "https://avatars0.githubusercontent.com/u/1161565?s=460&u=39d8251a7defffbb73343024d4184952b1e205c6&v=4",
+  "whatsapp": "27992246970",
+  "bio": "be happy!",
+  "subject": "Matemática",
+  "cost": 100,
+  "schedule": [
+    {"week_day": 1, "from": "8:00", "to": "12:00"},
+    {"week_day": 3, "from": "12:00", "to": "16:00"},
+    {"week_day": 4, "from": "8:00", "to": "10:00"},
+    {"week_day": 5, "from": "13:00", "to": "15:00"}
+    ]
+}
